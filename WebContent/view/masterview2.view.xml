@@ -1,0 +1,24 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="rollcomponent3.controller.masterview2" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="master2"  showNavButton="true" navButtonText="Back" navButtonPress="onBack">
+		<content>
+		<List
+		id="ShortProductList2"
+		headerText="ODATA"
+		items="{/master1data}">
+			
+		
+		
+		<StandardListItem title="{name}" type="Active" press="onGotomaster2"></StandardListItem>
+		<items/>
+			</List>
+	<!-- <StandardListItem title="detail1" type="Active" press="onGotoDetail1"></StandardListItem>
+					<StandardListItem title="detail2" type="Active" press="onGotoDetail2"></StandardListItem>
+					<StandardListItem title="detail3" type="Active" press="onGotoDetail3"></StandardListItem>
+					<StandardListItem title="detail4" type="Active" press="onGotoDetail4"></StandardListItem>
+					<StandardListItem title="detail4" type="Active" press="onGotoDetail5"></StandardListItem>
+					<StandardListItem title="detail5" type="Active" press="onGotoDetail6"></StandardListItem>
+					<StandardListItem title="detail6" type="Active" press="onGotoDetail7"></StandardListItem> -->
+		</content>
+	</Page>
+</core:View>

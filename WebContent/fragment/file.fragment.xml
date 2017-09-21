@@ -1,0 +1,25 @@
+<core:FragmentDefinition
+  xmlns:l="sap.ui.layout"
+  xmlns:f="sap.ui.layout.form"
+  xmlns:core="sap.ui.core"
+  xmlns="sap.m">
+      <Table id="idTimeEntriesTable" items="{/}">
+         <columns>
+             <Column ><Text text="Date" /></Column>
+             <Column  demandPopin="true"><Text text="From / To" /></Column>
+             <Column demandPopin="true" hAlign="Right"><Text text="Pause" /></Column>
+             <Column hAlign="Left"><Text text="Comment" /></Column>             
+         </columns>
+         <items>
+             <ColumnListItem>
+                 <cells>
+                     <ObjectIdentifier title="{CATSDATE}" text="{CATSDATE}" />
+                     <Text text="{BEGUZ}" />
+                     <Text text="{ENDUZ}" />
+                     <Text text="{PAUSE}" />
+     <Text text="{KOMMENTAR_INT}" />
+                 </cells>
+             </ColumnListItem>
+         </items>
+     </Table>
+</core:FragmentDefinition>

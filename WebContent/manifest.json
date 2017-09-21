@@ -1,0 +1,68 @@
+{
+	"sap.app": {
+		"id": "rollcomponent3"
+	},
+	"sap.ui5": {
+		"rootView": "view.SPLITAPP",
+		"routing": {
+			"config": {
+				"viewType": "XML",
+				"routerClass": "sap.m.routing.Router",
+				"controlId": "idsplitapp"
+			},
+			"routes": [{
+					"pattern": "",
+                      "name": "master1",
+					"target": ["page1","welcomepage"]
+				},
+				
+				{
+					"pattern": "master2",
+                      "name": "master2",
+					"target": ["page1","page2"]
+				},
+				{
+					"pattern": "detail",
+					"name": "detail",
+					"target": ["page2", "page3"]
+				},
+				{
+					"pattern": "detail2",
+					"name": "detail2",
+					"target": ["page1", "page4"]
+				}
+			],
+			"targets": {
+
+
+				"page1": {
+					"viewName": "view.masterview1",
+					
+					"controlAggregation": "masterPages"
+				},
+				"page2": {
+					"viewName": "view.masterview2",
+					
+					"controlAggregation": "masterPages"
+				},
+				"page3": {
+					"viewName": "view.detailview2",
+					"controlAggregation": "detailPages"
+				},
+				"page4": {
+					"viewName": "view.detailview1",
+					"controlAggregation": "detailPages"
+				},
+				"welcomepage": {
+					"viewName": "view.welcome",
+					"controlAggregation": "detailPages"
+				}
+
+			}
+
+
+
+		}
+	}
+
+}
